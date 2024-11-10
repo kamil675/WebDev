@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body,html{ 
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            
+         } 
+        .container{
+            background-color:aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+          }
+        .container-content{
+            text-align: center;
+            background-color: rgb(238, 234, 229);
+            padding: 2rem;
+            border-radius: 10px;
+            max-width: 500px;
+            justify-content: center;
+        }
+        .logo{
+            border-radius: 20%;
+            width: 200px;
+            height: 150px;
+            object-fit: contain;
+        }
+        h1{
+            color: brown;
+            margin-bottom: 0.5rem;
+        }
+        p{
+            color: rgb(120, 46, 9);
+            margin-bottom: 20px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+    <div class="container-content">
+    <img src="ak.png" class="logo"alt="image logo">  
+    <h1>Coming Soon Landging Page</h1>
+    <p>this is a my landing page with double block and as well as login page and we are create font text</p>
+    <form id="new-form">
+        <input type="email" placeholder="enter your email">
+        <input type="password" placeholder="enter your password">
+        <input type="reset" placeholder="reset">
+        <button type="submit"> login</button>
+    </form>
+    </div>
+    </div>
+</body>
+</html>

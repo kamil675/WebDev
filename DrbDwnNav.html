@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: beige;
+        }
+        h1{
+            text-align: center;
+        }
+        .mannav{
+            background-color: aqua;
+            padding: 10px;
+        }
+        .mannav ul{
+            list-style-type: none;
+            display: flex;
+            padding: 0px;
+            margin: 0px;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+        .mannav a{
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            display: block;
+        }
+        .mannav .drp-cont{
+            display: none;
+        }
+        .mannav .drp:hover .drp-cont{
+            display:block;
+            position: absolute;
+            background-color: rgb(119, 122, 125);
+            min-width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="mainclas">
+        <h1>
+            THIS IS DROPDOWN NAVBAR
+        </h1>
+        <nav class="mannav">
+            <ul>
+                <li>
+                    <a href="#">home</a>
+                </li>
+                <li class="drp">
+                    <a href="#">about</a>
+                    <div class="drp-cont">
+                        <a href="#">our story</a>
+                        <a href="#">team</a>
+                        <a href="#">contect</a>
+                    </div>
+                </li>
+                <li><a href="#">product</a></li>
+                <li>
+                    <button class="btn">ligin</button>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: bisque;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            height: 100vh;
+        }
+        .head-contain{
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+            /* justify-content: center; */
+            /* text-align: center; */
+            /* color: blue; */
+            /* font: italic; */
+            /* align-items: center; */
+            background-color: aqua;
+        }
+        @media (max-width:650px) {
+            body{
+                align-items: flex-start;
+            }
+            .head-contain{
+                background-color: aquamarine;
+            }
+            
+        }
+        @media (min-width:651px) and(max-width:1024px){
+            body{
+                align-items: center;
+            }
+            .head-contain{
+                background-color: rgb(163, 231, 62);
+            }
+            
+        }
+        @media (min-width:1024px){
+            body{
+                align-items: end;
+            }
+            .head-contain{
+                background-color: rgb(97, 98, 13);
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+        <div class="contain">
+            <h2 class="head-contain">this is my favorite song and my favorite programming name </h2>
+        </div>
+</body>
+</html>

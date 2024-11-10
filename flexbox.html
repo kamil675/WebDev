@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color:rgb(121, 121, 243);
+        }
+        .container{
+            background-color: aqua;
+        }
+        .contain{
+            padding: 10px;
+            margin: 10px;
+            display: flex;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        h1,h2{
+            text-align: center;
+        }
+        .circle{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+            margin: 5px;
+            align-items: center;
+        }
+        .logo-1{
+            background-color: rgb(151, 175, 196);
+        }
+        .logo-2{
+            background-color: rgb(220, 166, 6);
+        }
+        .logo-3{
+            background-color: rgb(63, 92, 113);
+        }
+        .logo-4{
+            background-color: rgb(124, 82, 124);
+        }
+        .logo-5{
+            background-color: rgb(145, 81, 81);
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>flexbox master class</h1>
+    <div class="container">
+        <h2>1.default flax(row)</h2>
+        <div class="contain" style="flex-direction: row;">
+            <div class="circle logo-1">1</div>
+            <div class="circle logo-2">2</div>
+            <div class="circle logo-3">3</div>
+            <div class="circle logo-4">4</div>
+            <div class="circle logo-5">5</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>2.flex direction column</h2>
+        <div class="contain" style="flex-direction: column;">
+            <div class="circle logo-1">1</div>
+            <div class="circle logo-2">2</div>
+            <div class="circle logo-3">3</div>
+            <div class="circle logo-4">4</div>
+            <div class="circle logo-5">5</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>3.justify content space around</h2>
+        <div class="contain" style="justify-content: space-around;">
+            <div class="circle logo-1">1</div>
+            <div class="circle logo-2">2</div>
+            <div class="circle logo-3">3</div>
+            <div class="circle logo-4">4</div>
+            <div class="circle logo-5">5</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>4.align item</h2>
+        <div class="contain" style="align-items: end;">
+            <div class="circle logo-1">1</div>
+            <div class="circle logo-2">2</div>
+            <div class="circle logo-3">3</div>
+            <div class="circle logo-4">4</div>
+            <div class="circle logo-5">5</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>5.flex wrap</h2>
+        <div class="contain" style="flex-wrap:wrap; height: 200px;">
+            <div class="circle logo-1">1</div>
+            <div class="circle logo-2">2</div>
+            <div class="circle logo-3">3</div>
+            <div class="circle logo-4">4</div>
+            <div class="circle logo-5">5</div>
+            <div class="circle logo-1">1</div>
+            <div class="circle logo-2">2</div>
+            <div class="circle logo-3">3</div>
+            <div class="circle logo-4">4</div>
+            <div class="circle logo-5">5</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>6.flex wrap space around</h2>
+        <div class="contain" style="flex-wrap: wrap; align-content: space-around;">
+            <div class="circle logo-1">1</div>
+            <div class="circle logo-2">2</div>
+            <div class="circle logo-3">3</div>
+            <div class="circle logo-4">4</div>
+            <div class="circle logo-5">5</div>
+            <div class="circle logo-1">1</div>
+            <div class="circle logo-2">2</div>
+            <div class="circle logo-3">3</div>
+            <div class="circle logo-4">4</div>
+            <div class="circle logo-5">5</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>7.order property</h2>
+        <div class="contain">
+            <div class="circle logo-1" style="order: 5;">1</div>
+            <div class="circle logo-2" style="order: 4;">2</div>
+            <div class="circle logo-3" style="order: 1;">3</div>
+            <div class="circle logo-4" style="order: 2;">4</div>
+            <div class="circle logo-5" style="order: 3;">5</div>
+        </div>
+        <hr>
+        <div class="container">
+            <h2>8.flex grow</h2>
+            <div class="contain" style="align-items: end;">
+                <div class="circle logo-1" style="flex-grow:1">1</div>
+                <div class="circle logo-2" style="flex-grow:5">2</div>
+                <div class="circle logo-3" style="flex-grow:2">3</div>
+                <div class="circle logo-4" style="flex-grow:1">4</div>
+                <div class="circle logo-5" style="flex-grow:1">5</div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <h2>9.align self</h2>
+            <div class="contain">
+                <div class="circle logo-1" style="align-self:flex-start">1</div>
+                <div class="circle logo-2" style="align-self:center;">2</div>
+                <div class="circle logo-3" style="align-self:flex-end">3</div>
+                <div class="circle logo-4" style="align-self:center">4</div>
+                <div class="circle logo-5" style="align-self:flex-start">5</div>
+            </div>
+        </div>
+        </body>
+</html>
